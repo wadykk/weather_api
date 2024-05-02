@@ -1,5 +1,6 @@
 import express from "express";
 import weatherRoute from "./routes/weatherRoute.js";
+import seismicRoute from "./routes/seismicRoute.js"
 import cors from "cors";
 
 
@@ -15,6 +16,9 @@ app.use(cors());
 
 // We define our first route
 app.use("/api/weather", weatherRoute);
+
+//We define our second route
+app.use("/api/seismic", seismicRoute);
 
 // Start the express server
 app.listen(PORT, () => {
