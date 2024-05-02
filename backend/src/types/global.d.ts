@@ -12,3 +12,12 @@ interface SeismicData {
   latitude: number;
   longitude: number;
 }
+
+interface SupercarData {
+  model: string;
+  engine: number;
+  enginepower: number;
+  doors: number;
+  year: number;
+  fuelconsumption: number;
+}
