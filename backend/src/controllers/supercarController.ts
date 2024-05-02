@@ -4,7 +4,7 @@ import {
   generateAudiSupercarData,
   generateLamborghiniSupercarData,
   generateFerrariSupercarData,
-  generateAstongSupercarData,
+  generateAstonSupercarData,
   generateBentleySupercarData,
   generateMaseratiSupercarData,
 } from "../services/supercarService.js";
@@ -29,27 +29,27 @@ export const getSupercarData = async (req: Request, res: Response) => {
   // We will use a try catch block to catch any errors
   try {
     // Get the city param from the request
-    const { city } = req.params;
-    console.log(city);
+    const { model } = req.params;
+    console.log(model);
 
     // We will create a variable with a type of WeatherData
     let finalSupercarData: SupercarData;
 
     // We will use an if statement to check which city was passed in
-    if (city === "mercedes") {
+    if (model === "mercedes") {
       console.log(generateMercedesSupercarData());
       finalSupercarData = generateMercedesSupercarData();
-    } else if (city === "audi") {
+    } else if (model === "audi") {
       finalSupercarData = generateAudiSupercarData();
-    } else if (city === "lamborghini") {
+    } else if (model === "lamborghini") {
         finalSupercarData = generateLamborghiniSupercarData();
-    } else if (city === "ferrari") {
+    } else if (model === "ferrari") {
         finalSupercarData = generateFerrariSupercarData();
-    } else if (city === "aston martin") {
-        finalSupercarData = generateAstongSupercarData();
-    } else if (city === "bentley") {
+    } else if (model === "aston martin") {
+        finalSupercarData = generateAstonSupercarData();
+    } else if (model === "bentley") {
         finalSupercarData = generateBentleySupercarData();
-    } else if (city === "maserati") {
+    } else if (model === "maserati") {
         finalSupercarData = generateMaseratiSupercarData();
     } else {
       // If the city is not london or dublin, we will throw an error

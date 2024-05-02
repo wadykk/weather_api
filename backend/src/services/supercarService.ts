@@ -61,7 +61,7 @@ export const generateLamborghiniSupercarData = (): SupercarData => {
     return generatedSupercarData;
   };
 
-  export const generateAstongSupercarData = (): SupercarData => {
+  export const generateAstonSupercarData = (): SupercarData => {
     // Generate random supercar data
     const generatedSupercarData: SupercarData = {
       model: "aston martin",
