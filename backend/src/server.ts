@@ -2,6 +2,7 @@ import express from "express";
 import weatherRoute from "./routes/weatherRoute.js";
 import seismicRoute from "./routes/seismicRoute.js"
 import supercarRoute from "./routes/supercarRoute.js"
+import brandRoute from "./routes/brandRoute.js"
 import cors from "cors";
 
 
@@ -23,6 +24,9 @@ app.use("/api/seismic", seismicRoute);
 
 //We define our third route
 app.use("/api/supercar", supercarRoute);
+
+//We define our forth route
+app.use("/api/brand", brandRoute);
 
 // Start the express server
 app.listen(PORT, () => {

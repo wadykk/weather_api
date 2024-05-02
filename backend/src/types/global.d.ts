@@ -21,3 +21,16 @@ interface SupercarData {
   year: number;
   fuelconsumption: number;
 }
+
+interface BrandData {
+  model: string;
+  capacity: number;
+  colour: string;
+}
+
+interface CountryData {
+  country: string;
+  cities: number;
+  population: number;
+  houses: number;
+}
