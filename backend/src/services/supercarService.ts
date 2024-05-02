@@ -4,7 +4,7 @@ import { storeSupercarData } from "../helpers/helper.js";
 export const generateMercedesSupercarData = (): SupercarData => {
   // Generate random supercar data
   const generatedSupercarData: SupercarData = {
-    model: "mercedes",
+    model: "Mercedes",
     engine: faker.number.int({ min: 2.0, max: 10.0 }),
     enginepower: faker.number.int({ min: 500, max: 1200 }),
     doors:faker.number.int({ min: 1, max: 2 }),
@@ -19,7 +19,7 @@ export const generateMercedesSupercarData = (): SupercarData => {
 export const generateAudiSupercarData = (): SupercarData => {
   // Generate random supercar data
   const generatedSupercarData: SupercarData = {
-    model: "audi",
+    model: "Audi",
     engine: faker.number.int({ min: 2.0, max: 10.0 }),
     enginepower: faker.number.int({ min: 500, max: 1200 }),
     doors:faker.number.int({ min: 1, max: 2 }),
@@ -34,7 +34,7 @@ export const generateAudiSupercarData = (): SupercarData => {
 export const generateLamborghiniSupercarData = (): SupercarData => {
     // Generate random supercar data
     const generatedSupercarData: SupercarData = {
-      model: "lamborghini",
+      model: "Lamborghini",
       engine: faker.number.int({ min: 2.0, max: 10.0 }),
       enginepower: faker.number.int({ min: 500, max: 1200 }),
       doors:faker.number.int({ min: 1, max: 2 }),
@@ -49,7 +49,7 @@ export const generateLamborghiniSupercarData = (): SupercarData => {
   export const generateFerrariSupercarData = (): SupercarData => {
     // Generate random supercar data
     const generatedSupercarData: SupercarData = {
-      model: "ferrari",
+      model: "Ferrari",
       engine: faker.number.int({ min: 2.0, max: 10.0 }),
       enginepower: faker.number.int({ min: 500, max: 1200 }),
       doors:faker.number.int({ min: 1, max: 2 }),
@@ -64,7 +64,7 @@ export const generateLamborghiniSupercarData = (): SupercarData => {
   export const generateAstonSupercarData = (): SupercarData => {
     // Generate random supercar data
     const generatedSupercarData: SupercarData = {
-      model: "aston martin",
+      model: "Aston martin",
       engine: faker.number.int({ min: 2.0, max: 10.0 }),
       enginepower: faker.number.int({ min: 500, max: 1200 }),
       doors:faker.number.int({ min: 1, max: 2 }),
@@ -79,7 +79,7 @@ export const generateLamborghiniSupercarData = (): SupercarData => {
   export const generateBentleySupercarData = (): SupercarData => {
     // Generate random supercar data
     const generatedSupercarData: SupercarData = {
-      model: "bentley",
+      model: "Bentley",
       engine: faker.number.int({ min: 2.0, max: 10.0 }),
       enginepower: faker.number.int({ min: 500, max: 1200 }),
       doors:faker.number.int({ min: 1, max: 2 }),
@@ -94,7 +94,7 @@ export const generateLamborghiniSupercarData = (): SupercarData => {
   export const generateMaseratiSupercarData = (): SupercarData => {
     // Generate random supercar data
     const generatedSupercarData: SupercarData = {
-      model: "maserati",
+      model: "Maserati",
       engine: faker.number.int({ min: 2.0, max: 10.0 }),
       enginepower: faker.number.int({ min: 500, max: 1200 }),
       doors:faker.number.int({ min: 1, max: 2 }),
