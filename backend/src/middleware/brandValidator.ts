@@ -10,7 +10,7 @@ import { param } from "express-validator";
  * getSupercarData
  * );
  */
-export const validateModelName = param("model")
+export const validateBrandName = param("model")
   // We will use the isString method to check if the city param is a string
   .isString()
   // We will use the isIn method to check if the city param is either london or dublin
