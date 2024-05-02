@@ -4,7 +4,7 @@ import { storeBrandData } from "../helpers/helper.js";
 export const generateAppleBrandData = (): BrandData => {
   // Generate random phone brand data
   const generatedBrandData: BrandData = {
-    model: "Apple",
+    brand: "Apple",
     capacity: faker.number.int({ min: 4, max: 1028 }),
     colour: "Red",
   };
@@ -16,7 +16,7 @@ export const generateAppleBrandData = (): BrandData => {
 export const generateSamsungBrandData = (): BrandData => {
     // Generate random phone brand data
     const generatedBrandData: BrandData = {
-      model: "Samsung",
+      brand: "Samsung",
       capacity: faker.number.int({ min: 4, max: 1028 }),
       colour: "Black",
     };
@@ -28,7 +28,7 @@ export const generateSamsungBrandData = (): BrandData => {
   export const generateLenovoBrandData = (): BrandData => {
     // Generate random phone brand data
     const generatedBrandData: BrandData = {
-      model: "Lenovo",
+      brand: "Lenovo",
       capacity: faker.number.int({ min: 4, max: 1028 }),
       colour: "Yellow",
     };
@@ -40,7 +40,7 @@ export const generateSamsungBrandData = (): BrandData => {
   export const generateNokiaBrandData = (): BrandData => {
     // Generate random phone brand data
     const generatedBrandData: BrandData = {
-      model: "Nokia",
+      brand: "Nokia",
       capacity: faker.number.int({ min: 4, max: 1028 }),
       colour: "Gray",
     };
@@ -52,7 +52,7 @@ export const generateSamsungBrandData = (): BrandData => {
   export const generateGoogleBrandData = (): BrandData => {
     // Generate random phone brand data
     const generatedBrandData: BrandData = {
-      model: "Google",
+      brand: "Google",
       capacity: faker.number.int({ min: 4, max: 1028 }),
       colour: "White",
     };
@@ -64,7 +64,7 @@ export const generateSamsungBrandData = (): BrandData => {
   export const generateLGBrandData = (): BrandData => {
     // Generate random phone brand data
     const generatedBrandData: BrandData = {
-      model: "LG",
+      brand: "LG",
       capacity: faker.number.int({ min: 4, max: 1028 }),
       colour: "Brown",
     };
@@ -76,7 +76,7 @@ export const generateSamsungBrandData = (): BrandData => {
   export const generateSonyBrandData = (): BrandData => {
     // Generate random phone brand data
     const generatedBrandData: BrandData = {
-      model: "Sony",
+      brand: "Sony",
       capacity: faker.number.int({ min: 4, max: 1028 }),
       colour: "Blue",
     };

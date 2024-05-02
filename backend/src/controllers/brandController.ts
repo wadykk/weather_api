@@ -29,31 +29,31 @@ export const getBrandData = async (req: Request, res: Response) => {
 
   // We will use a try catch block to catch any errors
   try {
-    // Get the city param from the request
-    const { model } = req.params;
-    console.log(model);
+    // Get the phone brand param from the request
+    const { brand } = req.params;
+    console.log(brand);
 
-    // We will create a variable with a type of WeatherData
+    // We will create a variable with a type of BrandData
     let finalBrandData: BrandData;
 
-    // We will use an if statement to check which city was passed in
-    if (model === "apple") {
+    // We will use an if statement to check which brand was passed in
+    if (brand === "apple") {
       console.log(generateAppleBrandData());
       finalBrandData = generateAppleBrandData();
-    } else if (model === "samsung") {
+    } else if (brand === "samsung") {
       finalBrandData = generateSamsungBrandData();
-    } else if (model === "lenovo") {
+    } else if (brand === "lenovo") {
         finalBrandData = generateLenovoBrandData();
-    } else if (model === "nokia") {
+    } else if (brand === "nokia") {
         finalBrandData = generateNokiaBrandData();
-    } else if (model === "google") {
+    } else if (brand === "google") {
         finalBrandData = generateGoogleBrandData();
-    } else if (model === "lg") {
+    } else if (brand === "lg") {
         finalBrandData = generateLGBrandData();
-    } else if (model === "sony") {
+    } else if (brand === "sony") {
         finalBrandData = generateSonyBrandData();
     } else {
-      // If the city is not london or dublin, we will throw an error
+      // If the brand is not one of the above, we will throw an error
       res.status(404).send("Phone brand not found");
     }
 

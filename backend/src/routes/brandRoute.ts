@@ -6,7 +6,7 @@ import { validateBrandName } from "../middleware/brandValidator.js";
 const router = express.Router();
 
 // We will create a route for the weather data based on the city name
-router.get("/:model", validateBrandName, getBrandData);
+router.get("/:brand", validateBrandName, getBrandData);
 
 // We will export the router
 export default router;

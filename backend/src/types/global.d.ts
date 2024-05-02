@@ -23,14 +23,7 @@ interface SupercarData {
 }
 
 interface BrandData {
-  model: string;
+  brand: string;
   capacity: number;
   colour: string;
-}
-
-interface CountryData {
-  country: string;
-  cities: number;
-  population: number;
-  houses: number;
 }
