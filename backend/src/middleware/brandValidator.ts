@@ -1,17 +1,17 @@
 import { param } from "express-validator";
 
 /**
- * Validates the city name param
+ * Validates the brand name param
  * @returns {ValidationChain} - Express validator validation chain
  * @example
  * router.get(
- *  "/:model",
- * validateModelName,
+ *  "/:brand",
+ * validateBrandName,
  * getBrandData
  * );
  */
 export const validateBrandName = param("brand")
-  // We will use the isString method to check if the brand param is a string
+  // We will use the isString method to check if the phone brand param is a string
   .isString()
   // We will use the isIn method to check if the brand param is either one of the below
   .isIn(["apple", "samsung","lenovo", "nokia","google", "lg", "sony"])
