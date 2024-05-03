@@ -5,7 +5,7 @@ import { validateModelName } from "../middleware/supercarValidator.js";
 // We will create a router object
 const router = express.Router();
 
-// We will create a route for the weather data based on the city name
+// We will create a route for the supercar data based on the model of the supercar
 router.get("/:model", validateModelName, getSupercarData);
 
 // We will export the router
