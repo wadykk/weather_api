@@ -12,7 +12,7 @@ import {
 import { validationResult } from "express-validator";
 
 /**
- * Gets the seismic data for a city
+ * Gets the phone brand data for a brand
  * @param req the request object
  * @param res the response object
  */
