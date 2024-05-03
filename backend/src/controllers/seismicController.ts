@@ -27,7 +27,7 @@ export const getSeismicData = async (req: Request, res: Response) => {
     const { city } = req.params;
     console.log(city);
 
-    // We will create a variable with a type of WeatherData
+    // We will create a variable with a type of SeismicData
     let finalSeismicData: SeismicData;
 
     // We will use an if statement to check which city was passed in

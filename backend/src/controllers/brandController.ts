@@ -33,7 +33,7 @@ export const getBrandData = async (req: Request, res: Response) => {
     const { brand } = req.params;
     console.log(brand);
 
-    // We will create a variable with a type of BrandData
+    // We will create a variable with a type of Brand Data
     let finalBrandData: BrandData;
 
     // We will use an if statement to check which brand was passed in
@@ -53,7 +53,7 @@ export const getBrandData = async (req: Request, res: Response) => {
     } else if (brand === "sony") {
         finalBrandData = generateSonyBrandData();
     } else {
-      // If the brand is not one of the above, we will throw an error
+      // If the phone brand is not one of the above, we will throw an error
       res.status(404).send("Phone brand not found");
     }
 
